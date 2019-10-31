@@ -1,7 +1,6 @@
 import pandas as pd
 import xlwings as xw
 import smtplib
-import getpass
 import os, datetime
 import json
 import openpyxl
@@ -14,18 +13,20 @@ from email import encoders
 CRLF = "\r\n"
 def df_from_excel(path):
     app = xw.App(visible=False)
-    book = app.books.open(path)
+    # book = app.books.open(path)
+    book = xw.Book(path)
     book.save()
+    book.close()
     app.kill()
     return pd.read_excel(path,header=0)
 
 def open_exc():
     global wb_main, wb_trainer, wb_trainee, wb_cc, wb_trainroom
-    wb_main = df_from_excel("/Users/fahimhadimaula/Documents/F01 - YDL Generator/main_database_MU.xlsx")
-    wb_trainer = pd.read_excel("/Users/fahimhadimaula/Documents/F01 - YDL Generator/main_database_MU.xlsx", sheet_name="trainer")
-    wb_trainee = pd.read_excel("/Users/fahimhadimaula/Documents/F01 - YDL Generator/main_database_MU.xlsx", sheet_name="trainee")
-    wb_cc = pd.read_excel("/Users/fahimhadimaula/Documents/F01 - YDL Generator/main_database_MU.xlsx", sheet_name="CC")
-    wb_trainroom = pd.read_excel("/Users/fahimhadimaula/Documents/F01 - YDL Generator/main_database_MU.xlsx", sheet_name="training_room")
+    wb_main = df_from_excel(path)
+    wb_trainer = pd.read_excel(path, sheet_name="trainer")
+    wb_trainee = pd.read_excel(path, sheet_name="trainee")
+    wb_cc = pd.read_excel(path, sheet_name="CC")
+    wb_trainroom = pd.read_excel(path, sheet_name="training_room")
 
 def meeting_req():
     for event in wb_main[wb_main['meetreq_status'] != "done"]["event_code"].unique().tolist():
@@ -126,11 +127,11 @@ def meeting_req():
         mailServer.close()
 
 def update_excel(r):
-    workbook = openpyxl.load_workbook("/Users/fahimhadimaula/Documents/F01 - YDL Generator/main_database_MU.xlsx")
+    workbook = openpyxl.load_workbook(path)
     worksheet = workbook['main']
     mycell = worksheet.cell(row=(r+2), column=11)
     mycell.value = 'done'
-    workbook.save("/Users/fahimhadimaula/Documents/F01 - YDL Generator/main_database_MU.xlsx")
+    workbook.save(path)
 
 def extract_excel():
     global wb_trainer, wb_trainee, wb_trainroom
@@ -141,7 +142,7 @@ def extract_excel():
     exc = exc.merge(wb_cc, on='dept', how='left')
     wb_trainroom = wb_trainroom.loc[:, ['event_code', 'meeting_room', 'meeting_room_email', 'meeting_room_category']]
     exc = exc.merge(wb_trainroom, on='event_code', how='left')
-    with pd.ExcelWriter("/Users/fahimhadimaula/Documents/F01 - YDL Generator/extract_all.xlsx") as writer:
+    with pd.ExcelWriter("extract_all.xlsx") as writer:
         exc.to_excel(writer, sheet_name='all', index=False)
 
 def create_db():
@@ -180,9 +181,10 @@ def create_db():
 def log_conf():
     with open('pass.json', 'r') as f:
         ds = json.load(f)
-    global login, password
+    global login, password, path
     login = ds['login']['email']
     password = ds['login']['pass']
+    path = ds['path']
 
 if __name__ == "__main__":
     log_conf()
