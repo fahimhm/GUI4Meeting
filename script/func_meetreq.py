@@ -9,18 +9,27 @@ from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email.utils import COMMASPACE, formatdate
 from email import encoders
+import tkinter as tk
+from tkinter import ttk
 
 CRLF = "\r\n"
+LARGE_FONT = ("Verdana", 12)
+
+def log_conf():
+    with open(os.path.join(os.getcwd(), 'pass.json'), 'r') as f:
+        ds = json.load(f)
+    global login, password, path
+    login = ds['login']['email']
+    password = ds['login']['pass']
+    path = ds['path']
+
 def df_from_excel(path):
-    app = xw.App(visible=False)
-    # book = app.books.open(path)
     book = xw.Book(path)
     book.save()
-    book.close()
-    app.kill()
+    # book.close()
     return pd.read_excel(path,header=0)
 
-def open_exc():
+def open_exc(path):
     global wb_main, wb_trainer, wb_trainee, wb_cc, wb_trainroom
     wb_main = df_from_excel(path)
     wb_trainer = pd.read_excel(path, sheet_name="trainer")
@@ -28,8 +37,8 @@ def open_exc():
     wb_cc = pd.read_excel(path, sheet_name="CC")
     wb_trainroom = pd.read_excel(path, sheet_name="training_room")
 
-def meeting_req():
-    for event in wb_main[wb_main['meetreq_status'] != "done"]["event_code"].unique().tolist():
+def meeting_req(df):
+    for event in df["event_code"].unique().tolist():
         list_trainer = wb_trainer[wb_trainer['event_code'] == event]["trainer_email"].unique().tolist()
         list_trainee = wb_trainee[wb_trainee['event_code'] == event]["trainee_email"].unique().tolist()
         list_room = wb_trainroom[(wb_trainroom['event_code'] == event) & (wb_trainroom['meeting_room_category'] == 'system')]["meeting_room_email"].unique().tolist()
@@ -62,19 +71,19 @@ def meeting_req():
         ical += "SUMMARY:test "+ddtstart.strftime("%Y%m%d @ %H:%M")+CRLF+"TRANSP:OPAQUE"+CRLF+"END:VEVENT"+CRLF+"END:VCALENDAR"+CRLF
 
         body1 = ("Dear rekan-rekan,<br>" \
-"Mengundang rekan-rekan POK mengikuti:<br>" \
-"%(judul)s <br>" \
-"<br>" \
-"Hari, Tanggal: %(hari)s, %(tanggal)s <br>" \
-"Durasi: %(durasi)i jam <br>" \
-"Tempat: %(tempat)s <br>" \
-"Trainer: %(trainer)s <br>" \
-"Trainee:<br>" % {"judul": wb_main[wb_main['event_code'] == event]['event_name'][0],
-                "tanggal": str(wb_main[wb_main['event_code'] == event]['event_date'][0]),
-                "durasi": wb_main[wb_main['event_code'] == event]['event_duration'][0]/60,
-                "hari": wb_main[wb_main['event_code'] == event]['event_day'][0],
-                "tempat": wb_trainroom[wb_trainroom['event_code'] == event]['meeting_room'][0],
-                "trainer": wb_trainer[wb_trainer['event_code'] == event]['trainer_name'][0]})
+                "Mengundang rekan-rekan POK mengikuti:<br>" \
+                "%(judul)s <br>" \
+                "<br>" \
+                "Hari, Tanggal: %(hari)s, %(tanggal)s <br>" \
+                "Durasi: %(durasi)i jam <br>" \
+                "Tempat: %(tempat)s <br>" \
+                "Trainer: %(trainer)s <br>" \
+                "Trainee:<br>" % {"judul": wb_main[wb_main['event_code'] == event]['event_name'][0],
+                                "tanggal": str(wb_main[wb_main['event_code'] == event]['event_date'][0]),
+                                "durasi": wb_main[wb_main['event_code'] == event]['event_duration'][0]/60,
+                                "hari": wb_main[wb_main['event_code'] == event]['event_day'][0],
+                                "tempat": wb_trainroom[wb_trainroom['event_code'] == event]['meeting_room'][0],
+                                "trainer": wb_trainer[wb_trainer['event_code'] == event]['trainer_name'][0]})
 
         forbody2 = wb_trainee[wb_trainee['event_code'] == event][['trainee_name', 'dept']]
         forbody2.drop_duplicates(keep='first', inplace=True)
@@ -127,11 +136,12 @@ def meeting_req():
         mailServer.close()
 
 def update_excel(r):
-    workbook = openpyxl.load_workbook(path)
-    worksheet = workbook['main']
-    mycell = worksheet.cell(row=(r+2), column=11)
-    mycell.value = 'done'
-    workbook.save(path)
+    book = xw.Book(path)
+    sht = book.sheets['main']
+    cell = "K" + str(r+2)
+    sht.range(cell).value = 'done'
+    book.save()
+    # book.close()
 
 def extract_excel():
     global wb_trainer, wb_trainee, wb_trainroom
@@ -159,7 +169,7 @@ def create_db():
         db_cc = pd.DataFrame(columns=['dept', 'atasan', 'cc_1', 'cc_2', 'cc_3', 'cc_4', 'cc_5'])
         db_trainroom = pd.DataFrame(columns=['event_code', 'event_name', 'meeting_room', 'meeting_room_email', 'meeting_room_category'])
     finally:
-        open_exc()
+        open_exc(path)
         db_main = pd.concat([db_main, wb_main], axis=0, ignore_index=True, sort=False)
         db_trainer = pd.concat([db_trainer, wb_trainer], axis=0, ignore_index=True, sort=False)
         db_trainee = pd.concat([db_trainee, wb_trainee], axis=0, ignore_index=True, sort=False)
@@ -178,17 +188,45 @@ def create_db():
         db_cc.to_csv(r'database/db_cc.csv', index=False)
         db_trainroom.to_csv(r'database/db_trainroom.csv', index=False)
 
-def log_conf():
-    with open('pass.json', 'r') as f:
-        ds = json.load(f)
-    global login, password, path
-    login = ds['login']['email']
-    password = ds['login']['pass']
-    path = ds['path']
-
-if __name__ == "__main__":
+def email_training():
     log_conf()
-    open_exc()
-    meeting_req()
+    open_exc(path)
+    meeting_req(df=wb_main[wb_main['meetreq_status'] != "done"])
     extract_excel()
     create_db()
+    print("Email berhasil")
+
+class YDLapp(tk.Tk):
+    def __init__(self, *args, **kwargs):
+        tk.Tk.__init__(self, *args, **kwargs)
+        container = tk.Frame(self)
+        container.pack(side="top", fill="both", expand=True)
+        container.grid_rowconfigure(0, weight=1)
+        container.grid_columnconfigure(0, weight=1)
+        container.master.title("YDL Tools")
+
+        self.frames = {}
+
+        # for F in (StartPage):
+        frame = StartPage(container, self)
+        self.frames[StartPage] = frame
+        frame.grid(row=0, column=0, sticky="nsew")
+        # ----
+        self.show_frame(StartPage)
+    
+    def show_frame(self, cont):
+        frame = self.frames[cont]
+        frame.tkraise()
+
+class StartPage(tk.Frame):
+    def __init__(self, parent, controller):
+        tk.Frame.__init__(self, parent)
+        label = tk.Label(self, text="Meeting Request\nJadwal Training\nKlik Send!", font=LARGE_FONT)
+        label.pack(pady=10, padx=10)
+
+        button1 = ttk.Button(self, text="Send", command=lambda: email_training())
+        button1.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+
+app = YDLapp()
+app.geometry("400x300")
+app.mainloop()
