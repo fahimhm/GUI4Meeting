@@ -16,7 +16,7 @@ CRLF = "\r\n"
 LARGE_FONT = ("Verdana", 12)
 
 def log_conf():
-    with open(os.path.join(os.getcwd(), 'pass.json'), 'r') as f:
+    with open(os.path.join(os.getcwd(), 'pass.json'), 'r', encoding='utf-8') as f:
         ds = json.load(f)
     global login, password, path
     login = ds['login']['email']
@@ -207,12 +207,20 @@ class YDLapp(tk.Tk):
 
         self.frames = {}
 
-        # for F in (StartPage):
-        frame = StartPage(container, self)
-        self.frames[StartPage] = frame
-        frame.grid(row=0, column=0, sticky="nsew")
+        for F in (StartPage, changeConf):
+            frame = F(container, self)
+            self.frames[F] = frame
+            frame.grid(row=0, column=0, sticky="nsew")
         # ----
         self.show_frame(StartPage)
+
+        menu = tk.Menu(container.master)
+        container.master.config(menu=menu)
+
+        file = tk.Menu(menu)
+        file.add_command(label="Home", command = lambda: self.show_frame(StartPage))
+        file.add_command(label="Configuration", command = lambda: self.show_frame(changeConf))
+        menu.add_cascade(label="File", menu=file)
     
     def show_frame(self, cont):
         frame = self.frames[cont]
@@ -226,6 +234,39 @@ class StartPage(tk.Frame):
 
         button1 = ttk.Button(self, text="Send", command=lambda: email_training())
         button1.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+
+class changeConf(tk.Frame):
+    def __init__(self, parent, controller):
+        tk.Frame.__init__(self, parent)
+        tk.Label(self, text="\n\n").grid(row=0)
+        tk.Label(self, text="\tEmail").grid(row=2)
+        tk.Label(self, text="\tPassword").grid(row=3)
+        tk.Label(self, text="\tPath").grid(row=4)
+
+        email = tk.Entry(self)
+        password = tk.Entry(self, show="*")
+        path = tk.Entry(self)
+
+        email.grid(row=2, column=1)
+        password.grid(row=3, column=1)
+        path.grid(row=4, column=1)
+
+        def change_conf():
+            with open(os.path.join(os.getcwd(), 'pass.json'), 'r', encoding='utf-8') as f:
+                ds = json.load(f)
+            
+            ds['login']['email'] = email.get()
+            ds['login']['pass'] = password.get()
+            ds['path'] = path.get()
+
+            with open(os.path.join(os.getcwd(), 'pass.json'), 'w', encoding='utf-8') as f:
+                json.dump(ds, f)
+
+            email.delete(0, tk.END)
+            password.delete(0, tk.END)
+            path.delete(0, tk.END)
+
+        tk.Button(self, text='OK', command=change_conf).grid(row=5, column=1, sticky=tk.W, pady=4)
 
 app = YDLapp()
 app.geometry("400x300")
