@@ -78,12 +78,12 @@ def meeting_req(df):
                 "Durasi: %(durasi)i jam <br>" \
                 "Tempat: %(tempat)s <br>" \
                 "Trainer: %(trainer)s <br>" \
-                "Trainee:<br>" % {"judul": wb_main[wb_main['event_code'] == event]['event_name'][0],
-                                "tanggal": str(wb_main[wb_main['event_code'] == event]['event_date'][0]),
-                                "durasi": wb_main[wb_main['event_code'] == event]['event_duration'][0]/60,
-                                "hari": wb_main[wb_main['event_code'] == event]['event_day'][0],
-                                "tempat": wb_trainroom[wb_trainroom['event_code'] == event]['meeting_room'][0],
-                                "trainer": wb_trainer[wb_trainer['event_code'] == event]['trainer_name'][0]})
+                "Trainee:<br>" % {"judul": wb_main[wb_main['event_code'] == event]['event_name'].iloc[0],
+                                "tanggal": str(wb_main[wb_main['event_code'] == event]['event_date'].iloc[0]),
+                                "durasi": wb_main[wb_main['event_code'] == event]['event_duration'].iloc[0]/60,
+                                "hari": wb_main[wb_main['event_code'] == event]['event_day'].iloc[0],
+                                "tempat": wb_trainroom[wb_trainroom['event_code'] == event]['meeting_room'].iloc[0],
+                                "trainer": wb_trainer[wb_trainer['event_code'] == event]['trainer_name'].iloc[0]})
 
         forbody2 = wb_trainee[wb_trainee['event_code'] == event][['trainee_name', 'dept']]
         forbody2.drop_duplicates(keep='first', inplace=True)
