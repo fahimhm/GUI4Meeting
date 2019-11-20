@@ -59,17 +59,6 @@ def meeting_req(df):
         dtstart = ddtstart.strftime("%Y%m%dT%H%M%SZ")
         dtend = dtend.strftime("%Y%m%dT%H%M%SZ")
 
-        description = "DESCRIPTION: training invitation from YDL-Nutrifood"+CRLF
-        LOC = wb_trainroom[wb_trainroom['event_code'] == event]["meeting_room"].unique().tolist()[0]
-        attendee = ""
-        for att in attendees:
-            attendee += "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-    PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE"+CRLF+" ;CN="+att+";X-NUM-GUESTS=0:"+CRLF+" mailto:"+att+CRLF
-        ical = "BEGIN:VCALENDAR"+CRLF+"PRODID:pyICSParser"+CRLF+"VERSION:2.0"+CRLF+"CALSCALE:GREGORIAN"+CRLF
-        ical +="METHOD:REQUEST"+CRLF+"BEGIN:VEVENT"+CRLF+"DTSTART:"+dtstart+CRLF+"DTEND:"+dtend+CRLF+"DTSTAMP:"+dtstamp+CRLF+organizer+CRLF
-        ical += "UID:FIXMEUID"+dtstamp+CRLF
-        ical += attendee+"CREATED:"+dtstamp+CRLF+description+"LAST-MODIFIED:"+dtstamp+CRLF+"LOCATION:"+LOC+CRLF+"SEQUENCE:0"+CRLF+"STATUS:CONFIRMED"+CRLF
-        ical += "SUMMARY:test "+ddtstart.strftime("%Y%m%d @ %H:%M")+CRLF+"TRANSP:OPAQUE"+CRLF+"END:VEVENT"+CRLF+"END:VCALENDAR"+CRLF
-
         body1 = ("Dear rekan-rekan,<br>" \
                 "Mengundang rekan-rekan POK mengikuti:<br>" \
                 "%(judul)s <br>" \
@@ -97,16 +86,30 @@ def meeting_req(df):
         "Salam<br><br>" \
         "Tim YDL-Nutrifood"
 
-        eml_body = body1 + body2 + body3
+        description = body1 + body2 + body3 +CRLF
+        LOC = wb_trainroom[wb_trainroom['event_code'] == event]["meeting_room"].unique().tolist()[0]
+        attendee = ""
+        for att in attendees:
+            attendee += "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE"+CRLF+" ;CN="+att+";X-NUM-GUESTS=0:"+CRLF+" mailto:"+att+CRLF
+        for optt in list_optional:
+            attendee += "ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE"+CRLF+" ;CN="+optt+";X-NUM-GUESTS=0:"+CRLF+" mailto:"+optt+CRLF
+        ical = "BEGIN:VCALENDAR"+CRLF+"PRODID:pyICSParser"+CRLF+"VERSION:2.0"+CRLF+"CALSCALE:GREGORIAN"+CRLF
+        ical +="METHOD:REQUEST"+CRLF+"BEGIN:VEVENT"+CRLF+"DTSTART:"+dtstart+CRLF+"DTEND:"+dtend+CRLF+"DTSTAMP:"+dtstamp+CRLF+organizer+CRLF
+        ical += "UID:FIXMEUID"+dtstamp+CRLF
+        ical += attendee+"CREATED:"+dtstamp+CRLF+description+"LAST-MODIFIED:"+dtstamp+CRLF+"LOCATION:"+LOC+CRLF+"SEQUENCE:0"+CRLF+"STATUS:CONFIRMED"+CRLF
+        ical += "SUMMARY:test "+ddtstart.strftime("%Y%m%d @ %H:%M")+CRLF+"TRANSP:OPAQUE"+CRLF+"END:VEVENT"+CRLF+"END:VCALENDAR"+CRLF
+
+        # eml_body = body1 + body2 + body3
         msg = MIMEMultipart('mixed')
         msg['Reply-To']=fro
         msg['Date'] = formatdate(localtime=True)
         msg['Subject'] = wb_main[wb_main['event_code'] == event]['event_name'].tolist()[0]
         msg['From'] = fro
         msg['To'] = ",".join(attendees)
+        msg['CC'] = ",".join(list_optional)
         msg['Location'] = wb_trainroom[wb_trainroom['event_code'] == event]['meeting_room'].tolist()[0]
 
-        part_email = MIMEText(eml_body,"html")
+        part_email = MIMEText(description,"html")
         part_cal = MIMEText(ical,'calendar;method=REQUEST')
 
         msgAlternative = MIMEMultipart('alternative')
@@ -134,6 +137,8 @@ def meeting_req(df):
         mailServer.login(login, password)
         mailServer.sendmail(fro, attendees, msg.as_string())
         mailServer.close()
+
+        print(event, "-", wb_main[wb_main['event_code'] == event]['event_name'].iloc[0], "."*10, "done")
 
 def update_excel(r):
     book = xw.Book(path)
@@ -176,7 +181,7 @@ def create_db():
         db_cc = pd.concat([db_cc, wb_cc], axis=0, ignore_index=True, sort=False)
         db_trainroom = pd.concat([db_trainroom, wb_trainroom], axis=0, ignore_index=True, sort=False)
 
-        db_main.drop_duplicates(keep='first', inplace=True)
+        db_main.drop_duplicates(subset="event_code", keep='last', inplace=True)
         db_trainer.drop_duplicates(keep='first', inplace=True)
         db_trainee.drop_duplicates(keep='first', inplace=True)
         db_cc.drop_duplicates(keep='first', inplace=True)
@@ -187,6 +192,11 @@ def create_db():
         db_trainee.to_csv(r'database/db_trainee.csv', index=False)
         db_cc.to_csv(r'database/db_cc.csv', index=False)
         db_trainroom.to_csv(r'database/db_trainroom.csv', index=False)
+
+def email_report():
+    for event in df[(df['meetreq_status'] == 'done') & (df['report_status'].isnull()) & (df['fdh_status'] == 'done')]['event_code'].unique():
+        fro = "prameswari.kristal@nutrifood.co.id"
+
 
 def email_training():
     log_conf()
