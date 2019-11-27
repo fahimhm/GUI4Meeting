@@ -104,7 +104,7 @@ def meeting_req(df):
         msg = MIMEMultipart('mixed')
         msg['Reply-To']=fro
         msg['Date'] = formatdate(localtime=True)
-        msg['Subject'] = wb_main[wb_main['event_code'] == event]['event_name'].tolist()[0]
+        msg['Subject'] = wb_main[wb_main['event_code'] == event]['event_name'].unique()[0]
         msg['From'] = fro
         msg['To'] = ",".join(attendees)
         msg['CC'] = ",".join(list_optional)
@@ -129,22 +129,22 @@ def meeting_req(df):
         msgAlternative.attach(part_cal)
 
         idx = wb_main[wb_main['event_code'] == event].index[0]
-        update_excel(idx)
+        update_excel(idx, column="K")
 
         mailServer = smtplib.SMTP('smtp.gmail.com', 587)
         mailServer.ehlo()
         mailServer.starttls()
         mailServer.ehlo()
         mailServer.login(login, password)
-        mailServer.sendmail(fro, attendees, msg.as_string())
+        mailServer.sendmail(fro, attendees+list_optional, msg.as_string())
         mailServer.close()
 
         print(event, "-", wb_main[wb_main['event_code'] == event]['event_name'].iloc[0], "."*(40-len(wb_main[wb_main['event_code'] == event]['event_name'].iloc[0])), "done")
 
-def update_excel(r):
+def update_excel(r, column):
     book = xw.Book(path)
     sht = book.sheets['main']
-    cell = "K" + str(r+2)
+    cell = "{}".format(column) + str(r+2)
     sht.range(cell).value = 'done'
     book.save()
     # book.close()
@@ -241,18 +241,23 @@ def training_report(df):
 
         msg = MIMEMultipart()
         msg['From'] = fro
-        msg['To'] = list_to
-        msg['Cc'] = list_cc
-        msg['Subject'] = "Report | {}".format(new_df[['event_name']].unique())
+        msg['To'] = ",".join(list_to)
+        msg['Cc'] = ",".join(list_cc)
+        msg['Subject'] = "Report {}".format(new_df['event_name'].unique()[0])
         msg.attach(MIMEText(body, 'html'))
+
+        idx = wb_main[wb_main['event_code'] == event].index[0]
+        update_excel(idx, column="O")
 
         mailServer = smtplib.SMTP('smtp.gmail.com', 587)
         mailServer.ehlo()
         mailServer.starttls()
         mailServer.ehlo()
         mailServer.login(login, password)
-        mailServer.sendmail(fro, list_to, msg.as_string())
+        mailServer.sendmail(fro, list_to+list_cc, msg.as_string())
         mailServer.close()
+
+        print("Report", event, "-", wb_main[wb_main['event_code'] == event]['event_name'].iloc[0], "."*(35-len(wb_main[wb_main['event_code'] == event]['event_name'].iloc[0])), "done")
 
 def email_training():
     log_conf()
@@ -268,7 +273,7 @@ def email_report_training():
     training_report(df=wb_main)
     extract_excel()
     create_db()
-    print('Email berhasil')
+    print('Email report berhasil')
 
 class YDLapp(tk.Tk):
     def __init__(self, *args, **kwargs):
@@ -307,7 +312,7 @@ class StartPage(tk.Frame):
         label = tk.Label(self, text="Meeting Request\nJadwal Training\nKlik Send!", font=LARGE_FONT)
         label.pack(pady=10, padx=10)
 
-        button1 = ttk.Button(self, text="Send", command=lambda: email_training())
+        button1 = ttk.Button(self, text="Send", command=email_training)
         button1.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
 
 class changeConf(tk.Frame):
