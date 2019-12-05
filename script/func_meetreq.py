@@ -136,7 +136,7 @@ def meeting_req(df):
         idx = wb_main[wb_main['event_code'] == event].index[0]
         update_excel(idx, column="K")
 
-        mailServer = smtplib.SMTP('smtp.gmail.com', 587)
+        mailServer = smtplib.SMTP('smtp-mail.outlook.com', 587)
         mailServer.ehlo()
         mailServer.starttls()
         mailServer.ehlo()
