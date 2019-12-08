@@ -346,7 +346,7 @@ def eti_report(df):
         fro = 'prameswari.kristal@nutrifood.co.id'
 
         topic = wb_main[wb_main['event_code'] == event].loc[:,'event_name'].values.tolist()[0]
-        hartang = str(wb_main[wb_main['event_code'] == event].loc[:,'event_day'].values.tolist()[0]) + " / " + str(wb_main[wb_main['event_code'] == event].loc[:,'event_date'].tolist())
+        hartang = str(wb_main[wb_main['event_code'] == event].loc[:,'event_day'][0].strftime("%Y-%m-%d")) + " / " + str(wb_main[wb_main['event_code'] == event].loc[:,'event_date'][0].strftime("%H:%M:%S"))
         wakdar = str(wb_main[wb_main['event_code'] == event].loc[:,'event_date'].values.tolist()[0]) + " / " + str(wb_main[wb_main['event_code'] == event].loc[:,'event_duration'].values.tolist()[0]) + " menit"
         loc = wb_trainroom[wb_trainroom['event_code'] == event].loc[:,'meeting_room'].values[0]
         trainer = wb_trainer[wb_trainer['event_code'] == event].loc[:,'trainer_name'].values[0]
@@ -364,21 +364,21 @@ def eti_report(df):
         mean_eti_organizer = wb_eti[wb_eti['eval_training_code'] == code]['eti_organizer'].mean()
         mean_eti_trainee_relevan = wb_eti[wb_eti['eval_training_code'] == code]['eti_trainee_relevan'].mean()
         mean_eti_trainee_manfaat = wb_eti[wb_eti['eval_training_code'] == code]['eti_trainee_manfaat'].mean()
-        all_eti_essay_1 = "\n".join(wb_eti[wb_eti['eval_training_code'] == code]['eti_essay_1'])
-        all_eti_essay_2 = "\n".join(wb_eti[wb_eti['eval_training_code'] == code]['eti_essay_2'])
-        all_eti_essay_3 = "\n".join(wb_eti[wb_eti['eval_training_code'] == code]['eti_essay_3'])
+        all_eti_essay_1 = "<br>".join(wb_eti[wb_eti['eval_training_code'] == code]['eti_essay_1'])
+        all_eti_essay_2 = "<br>".join(wb_eti[wb_eti['eval_training_code'] == code]['eti_essay_2'])
+        all_eti_essay_3 = "<br>".join(wb_eti[wb_eti['eval_training_code'] == code]['eti_essay_3'])
 
         df_trainee_postest = wb_trainee[wb_trainee['event_code'] == event]
         df_trainee_postest = df_trainee_postest.loc[:,['trainee_name', 'NIK', 'dept', 'nilai_post_test']]
 
-        body1 = f"""Dear {trainer},<br>"
+        body1 = f"""Dear {trainer},<br>
                 Terimakasih sudah membawakan materi training. Berikut adalah Evaluasi Training Internal dari peserta training.<br><br>
                 Topik\t\t: {topic} <br>
                 Hari/tanggal\t\t: {hartang} <br>
                 Waktu/durasi\t\t: {wakdar} <br>
                 Tempat\t\t: {loc} <br>
-                Jumlah peserta\t\t: {sumtrainee} <br>"""
-        body2 = f"""<table>
+                Jumlah peserta\t\t: {sumtrainee} <br><br>"""
+        body2 = f"""<table border="1">
                     <tr>
                         <th>Aspek Trainer</th>
                         <th>Skala Nilai</th>
@@ -400,7 +400,7 @@ def eti_report(df):
                         <td>{mean_eti_trainer_waktu}</td>
                     </tr>
                 </table><br><br>"""
-        body3 = f"""<table>
+        body3 = f"""<table border="1">
                     <tr>
                         <th>Aspek Materi</th>
                         <th>Skala Nilai</th>
@@ -418,7 +418,7 @@ def eti_report(df):
                         <td>{mean_eti_materi_objective}</td>
                     </tr>
                 </table><br><br>"""
-        body4 = f"""<table>
+        body4 = f"""<table border="1">
                     <tr>
                         <th>Aspek Metode</th>
                         <th>Skala Nilai</th>
@@ -428,7 +428,7 @@ def eti_report(df):
                         <td>{mean_eti_metode_objective}</td>
                     </tr>
                 </table><br><br>"""
-        body5 = f"""<table>
+        body5 = f"""<table border="1">
                     <tr>
                         <th>Aspek Organizer</th>
                         <th>Skala Nilai</th>
@@ -438,7 +438,7 @@ def eti_report(df):
                         <td>{mean_eti_organizer}</td>
                     </tr>
                 </table><br><br>"""
-        body6 = f"""<table>
+        body6 = f"""<table border="1">
                     <tr>
                         <th>Aspek Trainee</th>
                         <th>Skala Nilai</th>
@@ -460,7 +460,7 @@ def eti_report(df):
                         <td>{all_eti_essay_2}</td>
                     </tr>
                 </table><br><br>"""
-        body7 = f"""<table>
+        body7 = f"""<table border="1">
                     <tr>
                         <th>Usulan Perbaikan</th>
                     </tr>
@@ -468,7 +468,7 @@ def eti_report(df):
                         <td>{all_eti_essay_3}</td>
                     </tr>
                 </table><br><br>"""
-        body8 = f"""<table>
+        body8 = f"""<table border="1">
                     <tr>
                         <th>Nama Peserta</th>
                         <th>NIK</th>
