@@ -528,6 +528,15 @@ def email_report_training():
     toc = time.time()
     print("Email report berhasil. Durasi proses: {0:.2f} detik".format(toc - tic))
 
+def email_report_eti():
+    tic = time.time()
+    log_conf()
+    open_exc(path)
+    eti_report(df=wb_main)
+    create_db()
+    toc = time.time()
+    print("Email report ETI berhasil. Durasi proses: {0:.2f} detik".format(toc -tic))
+
 class YDLapp(tk.Tk):
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
@@ -604,11 +613,13 @@ class changeConf(tk.Frame):
 class reportPage(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
-        label = tk.Label(self, text='Report Training\n\nKlik Send!', font=LARGE_FONT)
+        label = tk.Label(self, text='Report Page\n\nKlik \"Training\" untuk report training!\nKlik \"ETI\" untuk report ETI\n', font=LARGE_FONT)
         label.pack(pady=10, padx=10)
 
-        button1 = ttk.Button(self, text='Send', command=lambda: email_report_training())
+        button1 = ttk.Button(self, text='Training', command=lambda: email_report_training())
         button1.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
+        button2 = ttk.Button(self, text='ETI', command=lambda: email_report_eti())
+        button2.place(relx=0.5, rely=0, anchor=tk.CENTER)
 
 app = YDLapp()
 app.geometry("400x300")
