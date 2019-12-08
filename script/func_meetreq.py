@@ -346,8 +346,8 @@ def eti_report(df):
         fro = 'prameswari.kristal@nutrifood.co.id'
 
         topic = wb_main[wb_main['event_code'] == event].loc[:,'event_name'].values.tolist()[0]
-        hartang = str(wb_main[wb_main['event_code'] == event].loc[:,'event_day'].values.tolist()[0]) + " / " + str(wb_main[wb_main['event_code'] == event].loc[:,'event_date'].values.tolist()[0].strftime("%Y%m%d"))
-        wakdar = str(wb_main[wb_main['event_code'] == event].loc[:,'event_date'].values.tolist()[0].strftime("T%H%M%SZ")) + " / " + str(wb_main[wb_main['event_code'] == event].loc[:,'event_duration'].values.tolist()[0]) + " menit"
+        hartang = str(wb_main[wb_main['event_code'] == event].loc[:,'event_day'].values.tolist()[0]) + " / " + str(wb_main[wb_main['event_code'] == event].loc[:,'event_date'].tolist())
+        wakdar = str(wb_main[wb_main['event_code'] == event].loc[:,'event_date'].values.tolist()[0]) + " / " + str(wb_main[wb_main['event_code'] == event].loc[:,'event_duration'].values.tolist()[0]) + " menit"
         loc = wb_trainroom[wb_trainroom['event_code'] == event].loc[:,'meeting_room'].values[0]
         trainer = wb_trainer[wb_trainer['event_code'] == event].loc[:,'trainer_name'].values[0]
         sumtrainee = len(wb_trainee[wb_trainee['event_code'] == event].loc[:,'trainee_name'].values.tolist())
