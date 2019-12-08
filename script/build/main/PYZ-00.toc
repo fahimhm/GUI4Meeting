@@ -56,49 +56,25 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\__init__.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging._compat',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
-   'PYMODULE'),
   ('pkg_resources._vendor.packaging.version',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\version.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.pyparsing',
+  ('pkg_resources._vendor.packaging.__about__',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
    'PYMODULE'),
-  ('uuid',
+  ('pkg_resources._vendor',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\uuid.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
    'PYMODULE'),
-  ('ctypes.util',
+  ('pkg_resources._vendor.packaging._compat',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\util.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_compat.py',
    'PYMODULE'),
-  ('ctypes._aix',
+  ('pkg_resources._vendor.appdirs',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\_aix.py',
-   'PYMODULE'),
-  ('ctypes.macholib.dyld',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\macholib\\dyld.py',
-   'PYMODULE'),
-  ('ctypes.macholib',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\macholib\\__init__.py',
-   'PYMODULE'),
-  ('ctypes.macholib.dylib',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\macholib\\dylib.py',
-   'PYMODULE'),
-  ('ctypes.macholib.framework',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\macholib\\framework.py',
-   'PYMODULE'),
-  ('netbios',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\win32\\lib\\netbios.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
    'PYMODULE'),
   ('ctypes',
    'c:\\users\\fahim hadi '
@@ -111,18 +87,6 @@
   ('ctypes._endian',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\_endian.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.six',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\six.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.packaging._structures',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
-   'PYMODULE'),
-  ('pkg_resources._vendor.appdirs',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\appdirs.py',
    'PYMODULE'),
   ('win32com.shell.shellcon',
    'c:\\users\\fahim hadi '
@@ -504,13 +468,49 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pythoncom.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.utils',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
-   'PYMODULE'),
   ('pkg_resources._vendor.packaging.specifiers',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.pyparsing',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\pyparsing.py',
+   'PYMODULE'),
+  ('uuid',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\uuid.py',
+   'PYMODULE'),
+  ('ctypes.util',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\util.py',
+   'PYMODULE'),
+  ('ctypes._aix',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\_aix.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dyld',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\macholib\\dyld.py',
+   'PYMODULE'),
+  ('ctypes.macholib',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\macholib\\__init__.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dylib',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\macholib\\dylib.py',
+   'PYMODULE'),
+  ('ctypes.macholib.framework',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\ctypes\\macholib\\framework.py',
+   'PYMODULE'),
+  ('netbios',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\win32\\lib\\netbios.py',
+   'PYMODULE'),
+  ('pkg_resources._vendor.packaging._structures',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\_structures.py',
    'PYMODULE'),
   ('pkg_resources._vendor.packaging.requirements',
    'c:\\users\\fahim hadi '
@@ -524,13 +524,13 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__init__.py',
    'PYMODULE'),
-  ('pkg_resources._vendor.packaging.__about__',
+  ('pkg_resources._vendor.packaging.utils',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\__about__.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\packaging\\utils.py',
    'PYMODULE'),
-  ('pkg_resources._vendor',
+  ('pkg_resources._vendor.six',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\__init__.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pkg_resources\\_vendor\\six.py',
    'PYMODULE'),
   ('__main__',
    'C:\\Users\\Fahim Hadi '
@@ -1008,37 +1008,29 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\__init__.py',
    'PYMODULE'),
+  ('setuptools._vendor.pyparsing',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\pyparsing.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.specifiers',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.markers',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
   ('setuptools._vendor.packaging',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.version',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.__about__',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
    'PYMODULE'),
   ('setuptools._vendor.packaging._structures',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging._compat',
+  ('setuptools._vendor',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_compat.py',
-   'PYMODULE'),
-  ('setuptools._vendor.six',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\six.py',
-   'PYMODULE'),
-  ('setuptools._vendor.pyparsing',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\pyparsing.py',
-   'PYMODULE'),
-  ('setuptools._vendor.packaging.utils',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\__init__.py',
    'PYMODULE'),
   ('setuptools._vendor.packaging.requirements',
    'c:\\users\\fahim hadi '
@@ -1056,17 +1048,25 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\extern\\__init__.py',
    'PYMODULE'),
-  ('setuptools._vendor',
+  ('setuptools._vendor.packaging.version',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\__init__.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.specifiers',
+  ('setuptools._vendor.packaging.utils',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
    'PYMODULE'),
-  ('setuptools._vendor.packaging.markers',
+  ('setuptools._vendor.packaging.__about__',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\__about__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.six',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\six.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._compat',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\setuptools\\_vendor\\packaging\\_compat.py',
    'PYMODULE'),
   ('setuptools.msvc',
    'c:\\users\\fahim hadi '
@@ -1988,10 +1988,6 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\_strptime.py',
    'PYMODULE'),
-  ('_py_abc',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\_py_abc.py',
-   'PYMODULE'),
   ('stringprep',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\stringprep.py',
@@ -1999,10 +1995,6 @@
   ('fnmatch',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\fnmatch.py',
-   'PYMODULE'),
-  ('struct',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\struct.py',
    'PYMODULE'),
   ('_compat_pickle',
    'c:\\users\\fahim hadi '
@@ -2107,14 +2099,6 @@
   ('platform',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\platform.py',
-   'PYMODULE'),
-  ('token',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\token.py',
-   'PYMODULE'),
-  ('tokenize',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\tokenize.py',
    'PYMODULE'),
   ('urllib.parse',
    'c:\\users\\fahim hadi '
@@ -2368,6 +2352,22 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\doctest.py',
    'PYMODULE'),
+  ('pprint',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\pprint.py',
+   'PYMODULE'),
+  ('pickle',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\pickle.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\_py_abc.py',
+   'PYMODULE'),
   ('stat',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\stat.py',
@@ -2400,9 +2400,21 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\subprocess.py',
    'PYMODULE'),
+  ('token',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\token.py',
+   'PYMODULE'),
+  ('struct',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\struct.py',
+   'PYMODULE'),
   ('gettext',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\gettext.py',
+   'PYMODULE'),
+  ('copy',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\copy.py',
    'PYMODULE'),
   ('textwrap',
    'c:\\users\\fahim hadi '
@@ -2412,17 +2424,9 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\argparse.py',
    'PYMODULE'),
-  ('pprint',
+  ('tokenize',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\pprint.py',
-   'PYMODULE'),
-  ('pickle',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\pickle.py',
-   'PYMODULE'),
-  ('tracemalloc',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\tracemalloc.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\tokenize.py',
    'PYMODULE'),
   ('contextlib',
    'c:\\users\\fahim hadi '
@@ -2431,10 +2435,6 @@
   ('typing',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\typing.py',
-   'PYMODULE'),
-  ('copy',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\copy.py',
    'PYMODULE'),
   ('tkinter.ttk',
    'c:\\users\\fahim hadi '
@@ -2932,133 +2932,17 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\Image.py',
    'PYMODULE'),
-  ('PIL.CurImagePlugin',
+  ('PIL.McIdasImagePlugin',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\CurImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FitsStubImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\FitsStubImagePlugin.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\McIdasImagePlugin.py',
    'PYMODULE'),
   ('PIL.ImageFile',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\ImageFile.py',
    'PYMODULE'),
-  ('PIL.FtexImagePlugin',
+  ('PIL.TgaImagePlugin',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\FtexImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.WebPImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\WebPImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.DcxImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\DcxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PsdImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\PsdImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FliImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\FliImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.IptcImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\IptcImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.IcoImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\IcoImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PixarImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\PixarImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.McIdasImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\McIdasImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.XbmImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\XbmImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.XpmImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\XpmImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.SpiderImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\SpiderImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.ImageTk',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\ImageTk.py',
-   'PYMODULE'),
-  ('PIL.MspImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\MspImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PalmImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\PalmImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PcxImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\PcxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.SgiImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\SgiImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MpegImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\MpegImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.ImtImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\ImtImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.FpxImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\FpxImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.EpsImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\EpsImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.WmfImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\WmfImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.TiffImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\TiffImagePlugin.py',
-   'PYMODULE'),
-  ('fractions',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\fractions.py',
-   'PYMODULE'),
-  ('PIL.TiffTags',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\TiffTags.py',
-   'PYMODULE'),
-  ('PIL.BlpImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\BlpImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.MicImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\MicImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.ImImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\ImImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.Hdf5StubImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\TgaImagePlugin.py',
    'PYMODULE'),
   ('PIL.PdfImagePlugin',
    'c:\\users\\fahim hadi '
@@ -3072,6 +2956,42 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\ImageSequence.py',
    'PYMODULE'),
+  ('PIL.EpsImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PalmImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\PalmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcoImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\IcoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XVThumbImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XbmImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\XbmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpoImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WebPImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\WebPImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IptcImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\IptcImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GribStubImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\GribStubImagePlugin.py',
+   'PYMODULE'),
   ('PIL.Jpeg2KImagePlugin',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
@@ -3080,41 +3000,121 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
    'PYMODULE'),
-  ('PIL.MpoImagePlugin',
+  ('PIL.BlpImagePlugin',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\BlpImagePlugin.py',
    'PYMODULE'),
-  ('PIL.DdsImagePlugin',
+  ('PIL.DcxImagePlugin',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FitsStubImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\FitsStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SpiderImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\SpiderImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImageTk',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\ImageTk.py',
+   'PYMODULE'),
+  ('PIL.MspImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\MspImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\TiffImagePlugin.py',
+   'PYMODULE'),
+  ('fractions',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\fractions.py',
+   'PYMODULE'),
+  ('PIL.TiffTags',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\TiffTags.py',
+   'PYMODULE'),
+  ('PIL.FtexImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\FtexImagePlugin.py',
    'PYMODULE'),
   ('PIL.IcnsImagePlugin',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\IcnsImagePlugin.py',
    'PYMODULE'),
-  ('PIL.SunImagePlugin',
+  ('PIL.XpmImagePlugin',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\SunImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.GribStubImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\GribStubImagePlugin.py',
-   'PYMODULE'),
-  ('PIL.PcdImagePlugin',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\XpmImagePlugin.py',
    'PYMODULE'),
   ('PIL.GbrImagePlugin',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\GbrImagePlugin.py',
    'PYMODULE'),
-  ('PIL.TgaImagePlugin',
+  ('PIL.MpegImagePlugin',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\TgaImagePlugin.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\MpegImagePlugin.py',
    'PYMODULE'),
-  ('PIL.XVThumbImagePlugin',
+  ('PIL.ImImagePlugin',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\ImImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SgiImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\SgiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FpxImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.CurImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\CurImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DdsImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PsdImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\PsdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SunImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\SunImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcdImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WmfImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\WmfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FliImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\FliImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PixarImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\PixarImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcxImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\PcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MicImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\MicImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Hdf5StubImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImtImagePlugin',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\PIL\\ImtImagePlugin.py',
    'PYMODULE'),
   ('PIL.ImageShow',
    'c:\\users\\fahim hadi '
@@ -4849,37 +4849,9 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\bindings\\openssl\\_conditional.py',
    'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.ciphers',
+  ('cryptography.hazmat.backends.openssl.x509',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\ciphers.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.primitives.ciphers.modes',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\modes.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.primitives.ciphers',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\__init__.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.primitives.ciphers.base',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\base.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.primitives',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\__init__.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.primitives.hashes',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\hashes.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.primitives.serialization',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\__init__.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.primitives.serialization.ssh',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\ssh.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\x509.py',
    'PYMODULE'),
   ('cryptography.hazmat.primitives.asymmetric.rsa',
    'c:\\users\\fahim hadi '
@@ -4909,9 +4881,25 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\dh.py',
    'PYMODULE'),
+  ('cryptography.hazmat.primitives.serialization',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.serialization.ssh',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\ssh.py',
+   'PYMODULE'),
   ('cryptography.hazmat.primitives.serialization.base',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\serialization\\base.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.hashes',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\hashes.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\__init__.py',
    'PYMODULE'),
   ('cryptography.hazmat.primitives.mac',
    'c:\\users\\fahim hadi '
@@ -4921,17 +4909,13 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\constant_time.py',
    'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.x25519',
+  ('cryptography.hazmat.backends.openssl.dh',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\x25519.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\dh.py',
    'PYMODULE'),
-  ('cryptography.hazmat.primitives.asymmetric.x25519',
+  ('cryptography.hazmat.backends.openssl.hmac',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\x25519.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.cmac',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\cmac.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\hmac.py',
    'PYMODULE'),
   ('cryptography.hazmat.backends.openssl.backend',
    'c:\\users\\fahim hadi '
@@ -5033,6 +5017,18 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\kdf\\__init__.py',
    'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers.modes',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\modes.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers.base',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\base.py',
+   'PYMODULE'),
   ('cryptography.hazmat.primitives.ciphers.algorithms',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\algorithms.py',
@@ -5049,9 +5045,13 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\asn1crypto\\parser.py',
    'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.hashes',
+  ('cryptography.hazmat.backends.openssl.x25519',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\hashes.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\x25519.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.asymmetric.x25519',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\x25519.py',
    'PYMODULE'),
   ('cryptography.hazmat.backends.openssl.x448',
    'c:\\users\\fahim hadi '
@@ -5061,57 +5061,41 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\x448.py',
    'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.encode_asn1',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\encode_asn1.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.ocsp',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\ocsp.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.dh',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\dh.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\__init__.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.aead',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\aead.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.primitives.ciphers.aead',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\aead.py',
-   'PYMODULE'),
   ('cryptography.hazmat.backends.openssl.dsa',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\dsa.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.x509',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\x509.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.backends',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\__init__.py',
-   'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.decode_asn1',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\decode_asn1.py',
    'PYMODULE'),
   ('cryptography.hazmat.backends.interfaces',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\interfaces.py',
    'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.ec',
+  ('cryptography.hazmat.backends.openssl.cmac',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\ec.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\cmac.py',
    'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.hmac',
+  ('cryptography.hazmat.backends.openssl.rsa',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\hmac.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\rsa.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl.encode_asn1',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\encode_asn1.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl.hashes',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\hashes.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\__init__.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl.ocsp',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\ocsp.py',
    'PYMODULE'),
   ('cryptography.hazmat.backends.openssl.utils',
    'c:\\users\\fahim hadi '
@@ -5121,9 +5105,25 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\asymmetric\\utils.py',
    'PYMODULE'),
-  ('cryptography.hazmat.backends.openssl.rsa',
+  ('cryptography.hazmat.backends.openssl.aead',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\rsa.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\aead.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.primitives.ciphers.aead',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\primitives\\ciphers\\aead.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl.decode_asn1',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\decode_asn1.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl.ec',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\ec.py',
+   'PYMODULE'),
+  ('cryptography.hazmat.backends.openssl.ciphers',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\cryptography\\hazmat\\backends\\openssl\\ciphers.py',
    'PYMODULE'),
   ('cryptography.x509',
    'c:\\users\\fahim hadi '
@@ -5477,9 +5477,9 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\__init__.py',
    'PYMODULE'),
-  ('pygments.styles.algol',
+  ('pygments.styles.arduino',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\algol.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\arduino.py',
    'PYMODULE'),
   ('pygments.token',
    'c:\\users\\fahim hadi '
@@ -5489,69 +5489,69 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\style.py',
    'PYMODULE'),
-  ('pygments.styles.stata',
+  ('pygments.styles.tango',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\stata.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\tango.py',
    'PYMODULE'),
-  ('pygments.styles.abap',
+  ('pygments.styles.monokai',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\abap.py',
-   'PYMODULE'),
-  ('pygments.styles.sas',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\sas.py',
-   'PYMODULE'),
-  ('pygments.styles.murphy',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\murphy.py',
-   'PYMODULE'),
-  ('pygments.styles.lovelace',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\lovelace.py',
-   'PYMODULE'),
-  ('pygments.styles.colorful',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\colorful.py',
-   'PYMODULE'),
-  ('pygments.styles.autumn',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\autumn.py',
-   'PYMODULE'),
-  ('pygments.styles.vs',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\vs.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\monokai.py',
    'PYMODULE'),
   ('pygments.styles.manni',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\manni.py',
    'PYMODULE'),
-  ('pygments.styles.rrt',
+  ('pygments.styles.default',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\rrt.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\default.py',
    'PYMODULE'),
-  ('pygments.styles.paraiso_dark',
+  ('pygments.styles.colorful',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\paraiso_dark.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\colorful.py',
    'PYMODULE'),
-  ('pygments.styles.bw',
+  ('pygments.styles.lovelace',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\bw.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\lovelace.py',
    'PYMODULE'),
-  ('pygments.styles',
+  ('pygments.styles.perldoc',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\__init__.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\perldoc.py',
    'PYMODULE'),
   ('pygments.styles.native',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\native.py',
    'PYMODULE'),
-  ('pygments.styles.paraiso_light',
+  ('pygments.styles.emacs',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\paraiso_light.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\emacs.py',
    'PYMODULE'),
-  ('pygments.styles.vim',
+  ('pygments.styles.rainbow_dash',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\vim.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\rainbow_dash.py',
+   'PYMODULE'),
+  ('pygments.styles.vs',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\vs.py',
+   'PYMODULE'),
+  ('pygments.styles.borland',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\borland.py',
+   'PYMODULE'),
+  ('pygments.styles.xcode',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\xcode.py',
+   'PYMODULE'),
+  ('pygments.styles.igor',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\igor.py',
+   'PYMODULE'),
+  ('pygments.styles.murphy',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\murphy.py',
+   'PYMODULE'),
+  ('pygments.styles.bw',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\bw.py',
    'PYMODULE'),
   ('pygments.styles.friendly',
    'c:\\users\\fahim hadi '
@@ -5561,61 +5561,65 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\pastie.py',
    'PYMODULE'),
-  ('pygments.styles.rainbow_dash',
+  ('pygments.styles.vim',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\rainbow_dash.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\vim.py',
    'PYMODULE'),
-  ('pygments.styles.fruity',
+  ('pygments.styles.abap',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\fruity.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\abap.py',
    'PYMODULE'),
-  ('pygments.styles.igor',
+  ('pygments.styles.stata',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\igor.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\stata.py',
    'PYMODULE'),
-  ('pygments.styles.emacs',
+  ('pygments.styles.algol',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\emacs.py',
-   'PYMODULE'),
-  ('pygments.styles.xcode',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\xcode.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\algol.py',
    'PYMODULE'),
   ('pygments.styles.algol_nu',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\algol_nu.py',
    'PYMODULE'),
-  ('pygments.styles.tango',
+  ('pygments.styles.paraiso_light',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\tango.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\paraiso_light.py',
    'PYMODULE'),
-  ('pygments.styles.perldoc',
+  ('pygments.styles',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\perldoc.py',
-   'PYMODULE'),
-  ('pygments.styles.borland',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\borland.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\__init__.py',
    'PYMODULE'),
   ('pygments.styles.trac',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\trac.py',
    'PYMODULE'),
-  ('pygments.styles.arduino',
+  ('pygments.styles.paraiso_dark',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\arduino.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\paraiso_dark.py',
    'PYMODULE'),
-  ('pygments.styles.monokai',
+  ('pygments.styles.rrt',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\monokai.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\rrt.py',
    'PYMODULE'),
-  ('pygments.styles.default',
+  ('pygments.styles.sas',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\default.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\sas.py',
    'PYMODULE'),
-  ('pygments.lexers.rust',
+  ('pygments.styles.autumn',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\rust.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\autumn.py',
+   'PYMODULE'),
+  ('pygments.styles.fruity',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\styles\\fruity.py',
+   'PYMODULE'),
+  ('pygments.lexers._openedge_builtins',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_openedge_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.special',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\special.py',
    'PYMODULE'),
   ('pygments.lexer',
    'c:\\users\\fahim hadi '
@@ -5633,185 +5637,253 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\filter.py',
    'PYMODULE'),
-  ('pygments.lexers.graphics',
+  ('pygments.lexers.rust',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\graphics.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\rust.py',
    'PYMODULE'),
-  ('pygments.lexers.fortran',
+  ('pygments.lexers.javascript',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\fortran.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\javascript.py',
    'PYMODULE'),
-  ('pygments.lexers.objective',
+  ('pygments.lexers.igor',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\objective.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\igor.py',
    'PYMODULE'),
-  ('pygments.lexers.rnc',
+  ('pygments.lexers._asy_builtins',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\rnc.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_asy_builtins.py',
    'PYMODULE'),
-  ('pygments.lexers.scripting',
+  ('pygments.lexers.erlang',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\scripting.py',
-   'PYMODULE'),
-  ('pygments.lexers.markup',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\markup.py',
-   'PYMODULE'),
-  ('pygments.lexers.varnish',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\varnish.py',
-   'PYMODULE'),
-  ('pygments.lexers.textedit',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\textedit.py',
-   'PYMODULE'),
-  ('pygments.lexers.ambient',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ambient.py',
-   'PYMODULE'),
-  ('pygments.lexers.html',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\html.py',
-   'PYMODULE'),
-  ('pygments.lexers._stan_builtins',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_stan_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers._lua_builtins',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_lua_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.monte',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\monte.py',
-   'PYMODULE'),
-  ('pygments.lexers.hexdump',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\hexdump.py',
-   'PYMODULE'),
-  ('pygments.lexers.dylan',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\dylan.py',
-   'PYMODULE'),
-  ('pygments.lexers.bibtex',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\bibtex.py',
-   'PYMODULE'),
-  ('pygments.lexers.other',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\other.py',
-   'PYMODULE'),
-  ('pygments.lexers.asm',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\asm.py',
-   'PYMODULE'),
-  ('pygments.lexers.ooc',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ooc.py',
-   'PYMODULE'),
-  ('pygments.lexers.functional',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\functional.py',
-   'PYMODULE'),
-  ('pygments.lexers.eiffel',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\eiffel.py',
-   'PYMODULE'),
-  ('pygments.lexers.foxpro',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\foxpro.py',
-   'PYMODULE'),
-  ('pygments.lexers.modula2',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\modula2.py',
-   'PYMODULE'),
-  ('pygments.lexers.tcl',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\tcl.py',
-   'PYMODULE'),
-  ('pygments.lexers._stata_builtins',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_stata_builtins.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\erlang.py',
    'PYMODULE'),
   ('pygments.lexers.stata',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\stata.py',
    'PYMODULE'),
-  ('pygments.lexers.ncl',
+  ('pygments.lexers.fantom',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ncl.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\fantom.py',
    'PYMODULE'),
-  ('pygments.lexers.grammar_notation',
+  ('pygments.lexers.csound',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\grammar_notation.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\csound.py',
    'PYMODULE'),
-  ('pygments.lexers._openedge_builtins',
+  ('pygments.lexers.dalvik',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_openedge_builtins.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\dalvik.py',
    'PYMODULE'),
-  ('pygments.lexers.configs',
+  ('pygments.lexers._mql_builtins',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\configs.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_mql_builtins.py',
    'PYMODULE'),
-  ('pygments.lexers.data',
+  ('pygments.lexers.hexdump',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\data.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\hexdump.py',
    'PYMODULE'),
-  ('pygments.lexers.prolog',
+  ('pygments.lexers.factor',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\prolog.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\factor.py',
    'PYMODULE'),
-  ('pygments.lexers.testing',
+  ('pygments.lexers.haskell',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\testing.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\haskell.py',
    'PYMODULE'),
-  ('pygments.lexers.capnproto',
+  ('pygments.lexers.c_like',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\capnproto.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\c_like.py',
    'PYMODULE'),
-  ('pygments.lexers.compiled',
+  ('pygments.lexers.graphics',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\compiled.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\graphics.py',
    'PYMODULE'),
-  ('pygments.lexers.chapel',
+  ('pygments.lexers.snobol',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\chapel.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\snobol.py',
+   'PYMODULE'),
+  ('pygments.lexers.praat',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\praat.py',
+   'PYMODULE'),
+  ('pygments.lexers._sourcemod_builtins',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_sourcemod_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.math',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\math.py',
+   'PYMODULE'),
+  ('pygments.lexers.haxe',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\haxe.py',
    'PYMODULE'),
   ('pygments.lexers._tsql_builtins',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_tsql_builtins.py',
    'PYMODULE'),
-  ('pygments.lexers.web',
+  ('pygments.lexers.templates',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\web.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\templates.py',
    'PYMODULE'),
-  ('pygments.lexers.ml',
+  ('pygments.lexers.pawn',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ml.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\pawn.py',
    'PYMODULE'),
-  ('pygments.lexers.elm',
+  ('pygments.lexers.smalltalk',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\elm.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\smalltalk.py',
    'PYMODULE'),
-  ('pygments.lexers.dotnet',
+  ('pygments.lexers._stata_builtins',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\dotnet.py',
-   'PYMODULE'),
-  ('pygments.unistring',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\unistring.py',
-   'PYMODULE'),
-  ('pygments.lexers.parasail',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\parasail.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_stata_builtins.py',
    'PYMODULE'),
   ('pygments.lexers.console',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\console.py',
    'PYMODULE'),
-  ('pygments.lexers.haskell',
+  ('pygments.lexers.hdl',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\haskell.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\hdl.py',
+   'PYMODULE'),
+  ('pygments.lexers.apl',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\apl.py',
+   'PYMODULE'),
+  ('pygments.lexers._scilab_builtins',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_scilab_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.xorg',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\xorg.py',
+   'PYMODULE'),
+  ('pygments.lexers.python',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\python.py',
+   'PYMODULE'),
+  ('pygments.lexers.business',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\business.py',
+   'PYMODULE'),
+  ('pygments.lexers.robotframework',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\robotframework.py',
+   'PYMODULE'),
+  ('pygments.lexers.agile',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\agile.py',
+   'PYMODULE'),
+  ('pygments.lexers.parsers',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\parsers.py',
+   'PYMODULE'),
+  ('pygments.lexers.parasail',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\parasail.py',
+   'PYMODULE'),
+  ('pygments.lexers.foxpro',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\foxpro.py',
+   'PYMODULE'),
+  ('pygments.lexers.ambient',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ambient.py',
+   'PYMODULE'),
+  ('pygments.lexers.ecl',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ecl.py',
+   'PYMODULE'),
+  ('pygments.lexers.nix',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\nix.py',
+   'PYMODULE'),
+  ('pygments.lexers.smv',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\smv.py',
+   'PYMODULE'),
+  ('pygments.lexers.matlab',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\matlab.py',
+   'PYMODULE'),
+  ('pygments.lexers.grammar_notation',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\grammar_notation.py',
+   'PYMODULE'),
+  ('pygments.lexers.iolang',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\iolang.py',
+   'PYMODULE'),
+  ('pygments.lexers.int_fiction',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\int_fiction.py',
+   'PYMODULE'),
+  ('pygments.lexers.capnproto',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\capnproto.py',
+   'PYMODULE'),
+  ('pygments.lexers.r',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\r.py',
+   'PYMODULE'),
+  ('pygments.lexers.idl',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\idl.py',
+   'PYMODULE'),
+  ('pygments.lexers.other',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\other.py',
+   'PYMODULE'),
+  ('pygments.lexers.automation',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\automation.py',
+   'PYMODULE'),
+  ('pygments.lexers.make',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\make.py',
+   'PYMODULE'),
+  ('pygments.lexers.urbi',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\urbi.py',
+   'PYMODULE'),
+  ('pygments.lexers.nimrod',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\nimrod.py',
+   'PYMODULE'),
+  ('pygments.lexers.modeling',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\modeling.py',
+   'PYMODULE'),
+  ('pygments.lexers.julia',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\julia.py',
+   'PYMODULE'),
+  ('pygments.lexers.graph',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\graph.py',
+   'PYMODULE'),
+  ('pygments.lexers.esoteric',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\esoteric.py',
+   'PYMODULE'),
+  ('pygments.lexers.elm',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\elm.py',
+   'PYMODULE'),
+  ('pygments.lexers.qvt',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\qvt.py',
+   'PYMODULE'),
+  ('pygments.lexers.typoscript',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\typoscript.py',
+   'PYMODULE'),
+  ('pygments.lexers._cl_builtins',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_cl_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.inferno',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\inferno.py',
    'PYMODULE'),
   ('pygments.lexers',
    'c:\\users\\fahim hadi '
@@ -5821,281 +5893,269 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\modeline.py',
    'PYMODULE'),
-  ('pygments.lexers.perl',
+  ('pygments.lexers.algebra',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\perl.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\algebra.py',
    'PYMODULE'),
-  ('pygments.lexers._sourcemod_builtins',
+  ('pygments.lexers._stan_builtins',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_sourcemod_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.c_like',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\c_like.py',
-   'PYMODULE'),
-  ('pygments.lexers.text',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\text.py',
-   'PYMODULE'),
-  ('pygments.lexers._php_builtins',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_php_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.trafficscript',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\trafficscript.py',
-   'PYMODULE'),
-  ('pygments.lexers.special',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\special.py',
-   'PYMODULE'),
-  ('pygments.lexers.smv',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\smv.py',
-   'PYMODULE'),
-  ('pygments.lexers.julia',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\julia.py',
-   'PYMODULE'),
-  ('pygments.lexers.business',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\business.py',
-   'PYMODULE'),
-  ('pygments.lexers.go',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\go.py',
-   'PYMODULE'),
-  ('pygments.lexers.rebol',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\rebol.py',
-   'PYMODULE'),
-  ('pygments.lexers.lisp',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\lisp.py',
-   'PYMODULE'),
-  ('pygments.lexers.apl',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\apl.py',
-   'PYMODULE'),
-  ('pygments.lexers.rdf',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\rdf.py',
-   'PYMODULE'),
-  ('pygments.lexers.xorg',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\xorg.py',
-   'PYMODULE'),
-  ('pygments.lexers.sas',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\sas.py',
-   'PYMODULE'),
-  ('pygments.lexers.basic',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\basic.py',
-   'PYMODULE'),
-  ('pygments.lexers.inferno',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\inferno.py',
-   'PYMODULE'),
-  ('pygments.lexers.parsers',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\parsers.py',
-   'PYMODULE'),
-  ('pygments.lexers.webmisc',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\webmisc.py',
-   'PYMODULE'),
-  ('pygments.lexers.forth',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\forth.py',
-   'PYMODULE'),
-  ('pygments.lexers.automation',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\automation.py',
-   'PYMODULE'),
-  ('pygments.lexers.csound',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\csound.py',
-   'PYMODULE'),
-  ('pygments.lexers.smalltalk',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\smalltalk.py',
-   'PYMODULE'),
-  ('pygments.lexers.idl',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\idl.py',
-   'PYMODULE'),
-  ('pygments.lexers.j',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\j.py',
-   'PYMODULE'),
-  ('pygments.lexers.ampl',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ampl.py',
-   'PYMODULE'),
-  ('pygments.lexers.felix',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\felix.py',
-   'PYMODULE'),
-  ('pygments.lexers.r',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\r.py',
-   'PYMODULE'),
-  ('pygments.lexers.int_fiction',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\int_fiction.py',
-   'PYMODULE'),
-  ('pygments.lexers.installers',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\installers.py',
-   'PYMODULE'),
-  ('pygments.lexers.snobol',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\snobol.py',
-   'PYMODULE'),
-  ('pygments.lexers.css',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\css.py',
-   'PYMODULE'),
-  ('pygments.lexers.whiley',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\whiley.py',
-   'PYMODULE'),
-  ('pygments.lexers.math',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\math.py',
-   'PYMODULE'),
-  ('pygments.lexers.roboconf',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\roboconf.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_stan_builtins.py',
    'PYMODULE'),
   ('pygments.lexers.php',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\php.py',
    'PYMODULE'),
-  ('pygments.lexers.hdl',
+  ('pygments.lexers.oberon',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\hdl.py',
-   'PYMODULE'),
-  ('pygments.lexers.pawn',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\pawn.py',
-   'PYMODULE'),
-  ('pygments.lexers.nit',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\nit.py',
-   'PYMODULE'),
-  ('pygments.lexers.python',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\python.py',
-   'PYMODULE'),
-  ('pygments.lexers.factor',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\factor.py',
-   'PYMODULE'),
-  ('pygments.lexers.agile',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\agile.py',
-   'PYMODULE'),
-  ('pygments.lexers._lasso_builtins',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_lasso_builtins.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\oberon.py',
    'PYMODULE'),
   ('pygments.lexers.d',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\d.py',
    'PYMODULE'),
-  ('pygments.lexers._postgres_builtins',
+  ('pygments.lexers.crystal',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_postgres_builtins.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\crystal.py',
    'PYMODULE'),
-  ('pygments.lexers.jvm',
+  ('pygments.lexers.roboconf',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\jvm.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\roboconf.py',
    'PYMODULE'),
-  ('pygments.lexers.javascript',
+  ('pygments.lexers.modula2',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\javascript.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\modula2.py',
    'PYMODULE'),
-  ('pygments.lexers.fantom',
+  ('pygments.lexers.basic',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\fantom.py',
-   'PYMODULE'),
-  ('pygments.lexers._cocoa_builtins',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_cocoa_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.robotframework',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\robotframework.py',
-   'PYMODULE'),
-  ('pygments.lexers._csound_builtins',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_csound_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.typoscript',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\typoscript.py',
-   'PYMODULE'),
-  ('pygments.lexers.ruby',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ruby.py',
-   'PYMODULE'),
-  ('pygments.lexers.dsls',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\dsls.py',
-   'PYMODULE'),
-  ('pygments.lexers.make',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\make.py',
-   'PYMODULE'),
-  ('pygments.lexers.theorem',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\theorem.py',
-   'PYMODULE'),
-  ('pygments.lexers.supercollider',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\supercollider.py',
-   'PYMODULE'),
-  ('pygments.lexers.actionscript',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\actionscript.py',
-   'PYMODULE'),
-  ('pygments.lexers._vim_builtins',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_vim_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.resource',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\resource.py',
-   'PYMODULE'),
-  ('pygments.lexers.erlang',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\erlang.py',
-   'PYMODULE'),
-  ('pygments.lexers.urbi',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\urbi.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\basic.py',
    'PYMODULE'),
   ('pygments.lexers.c_cpp',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\c_cpp.py',
    'PYMODULE'),
-  ('pygments.lexers.algebra',
+  ('pygments.lexers.text',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\algebra.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\text.py',
+   'PYMODULE'),
+  ('pygments.lexers.ruby',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ruby.py',
+   'PYMODULE'),
+  ('pygments.lexers.dotnet',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\dotnet.py',
+   'PYMODULE'),
+  ('pygments.lexers.nit',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\nit.py',
+   'PYMODULE'),
+  ('pygments.lexers.markup',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\markup.py',
    'PYMODULE'),
   ('pygments.lexers.ezhil',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ezhil.py',
    'PYMODULE'),
-  ('pygments.lexers.ecl',
+  ('pygments.lexers.forth',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ecl.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\forth.py',
+   'PYMODULE'),
+  ('pygments.lexers._php_builtins',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_php_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.j',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\j.py',
+   'PYMODULE'),
+  ('pygments.lexers.perl',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\perl.py',
+   'PYMODULE'),
+  ('pygments.lexers.monte',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\monte.py',
+   'PYMODULE'),
+  ('pygments.lexers.sql',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\sql.py',
+   'PYMODULE'),
+  ('pygments.lexers.testing',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\testing.py',
+   'PYMODULE'),
+  ('pygments.lexers.chapel',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\chapel.py',
+   'PYMODULE'),
+  ('pygments.lexers.archetype',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\archetype.py',
+   'PYMODULE'),
+  ('pygments.lexers.data',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\data.py',
+   'PYMODULE'),
+  ('pygments.lexers.clean',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\clean.py',
+   'PYMODULE'),
+  ('pygments.lexers.eiffel',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\eiffel.py',
+   'PYMODULE'),
+  ('pygments.lexers.go',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\go.py',
+   'PYMODULE'),
+  ('pygments.lexers.textfmts',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\textfmts.py',
+   'PYMODULE'),
+  ('pygments.lexers.diff',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\diff.py',
+   'PYMODULE'),
+  ('pygments.lexers.varnish',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\varnish.py',
+   'PYMODULE'),
+  ('pygments.lexers.felix',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\felix.py',
+   'PYMODULE'),
+  ('pygments.lexers.objective',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\objective.py',
+   'PYMODULE'),
+  ('pygments.lexers.compiled',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\compiled.py',
+   'PYMODULE'),
+  ('pygments.lexers.theorem',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\theorem.py',
+   'PYMODULE'),
+  ('pygments.lexers._csound_builtins',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_csound_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.dsls',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\dsls.py',
+   'PYMODULE'),
+  ('pygments.lexers.configs',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\configs.py',
+   'PYMODULE'),
+  ('pygments.lexers.shell',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\shell.py',
+   'PYMODULE'),
+  ('pygments.lexers._vim_builtins',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_vim_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.rdf',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\rdf.py',
+   'PYMODULE'),
+  ('pygments.lexers.sas',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\sas.py',
+   'PYMODULE'),
+  ('pygments.lexers.x10',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\x10.py',
+   'PYMODULE'),
+  ('pygments.lexers.tcl',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\tcl.py',
+   'PYMODULE'),
+  ('pygments.lexers.dylan',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\dylan.py',
+   'PYMODULE'),
+  ('pygments.lexers.actionscript',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\actionscript.py',
+   'PYMODULE'),
+  ('pygments.lexers.ml',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ml.py',
+   'PYMODULE'),
+  ('pygments.lexers.trafficscript',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\trafficscript.py',
+   'PYMODULE'),
+  ('pygments.lexers.css',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\css.py',
+   'PYMODULE'),
+  ('pygments.lexers.web',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\web.py',
+   'PYMODULE'),
+  ('pygments.lexers.ampl',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ampl.py',
+   'PYMODULE'),
+  ('pygments.lexers._postgres_builtins',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_postgres_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.ooc',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ooc.py',
+   'PYMODULE'),
+  ('pygments.lexers.resource',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\resource.py',
+   'PYMODULE'),
+  ('pygments.lexers._lasso_builtins',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_lasso_builtins.py',
+   'PYMODULE'),
+  ('pygments.lexers.rebol',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\rebol.py',
+   'PYMODULE'),
+  ('pygments.lexers.html',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\html.py',
+   'PYMODULE'),
+  ('pygments.lexers.jvm',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\jvm.py',
+   'PYMODULE'),
+  ('pygments.lexers.whiley',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\whiley.py',
+   'PYMODULE'),
+  ('pygments.lexers.prolog',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\prolog.py',
+   'PYMODULE'),
+  ('pygments.lexers.rnc',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\rnc.py',
+   'PYMODULE'),
+  ('pygments.lexers.ncl',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\ncl.py',
+   'PYMODULE'),
+  ('pygments.lexers.functional',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\functional.py',
    'PYMODULE'),
   ('pygments.lexers._mapping',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_mapping.py',
+   'PYMODULE'),
+  ('pygments.lexers.installers',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\installers.py',
    'PYMODULE'),
   ('pygments.lexers.pascal',
    'c:\\users\\fahim hadi '
@@ -6105,129 +6165,69 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\scanner.py',
    'PYMODULE'),
-  ('pygments.lexers.esoteric',
+  ('pygments.lexers.webmisc',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\esoteric.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\webmisc.py',
    'PYMODULE'),
-  ('pygments.lexers.iolang',
+  ('pygments.lexers.supercollider',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\iolang.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\supercollider.py',
    'PYMODULE'),
-  ('pygments.lexers.igor',
+  ('pygments.lexers.scripting',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\igor.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\scripting.py',
    'PYMODULE'),
-  ('pygments.lexers._cl_builtins',
+  ('pygments.lexers._lua_builtins',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_cl_builtins.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_lua_builtins.py',
    'PYMODULE'),
-  ('pygments.lexers._asy_builtins',
+  ('pygments.lexers.asm',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_asy_builtins.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\asm.py',
    'PYMODULE'),
-  ('pygments.lexers.dalvik',
+  ('pygments.lexers.bibtex',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\dalvik.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\bibtex.py',
    'PYMODULE'),
-  ('pygments.lexers.templates',
+  ('pygments.lexers._cocoa_builtins',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\templates.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_cocoa_builtins.py',
    'PYMODULE'),
-  ('pygments.lexers.praat',
+  ('pygments.lexers.textedit',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\praat.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\textedit.py',
    'PYMODULE'),
-  ('pygments.lexers._mql_builtins',
+  ('pygments.lexers.lisp',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_mql_builtins.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\lisp.py',
    'PYMODULE'),
-  ('pygments.lexers.modeling',
+  ('pygments.unistring',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\modeling.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\unistring.py',
    'PYMODULE'),
-  ('pygments.lexers.textfmts',
+  ('pygments.lexers.fortran',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\textfmts.py',
-   'PYMODULE'),
-  ('pygments.lexers.shell',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\shell.py',
-   'PYMODULE'),
-  ('pygments.lexers.oberon',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\oberon.py',
-   'PYMODULE'),
-  ('pygments.lexers.qvt',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\qvt.py',
-   'PYMODULE'),
-  ('pygments.lexers.diff',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\diff.py',
-   'PYMODULE'),
-  ('pygments.lexers.matlab',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\matlab.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\fortran.py',
    'PYMODULE'),
   ('pygments.lexers.verification',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\verification.py',
    'PYMODULE'),
-  ('pygments.lexers.nimrod',
+  ('pygments.formatters.rtf',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\nimrod.py',
-   'PYMODULE'),
-  ('pygments.lexers.clean',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\clean.py',
-   'PYMODULE'),
-  ('pygments.lexers.x10',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\x10.py',
-   'PYMODULE'),
-  ('pygments.lexers.crystal',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\crystal.py',
-   'PYMODULE'),
-  ('pygments.lexers.graph',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\graph.py',
-   'PYMODULE'),
-  ('pygments.lexers._scilab_builtins',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\_scilab_builtins.py',
-   'PYMODULE'),
-  ('pygments.lexers.archetype',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\archetype.py',
-   'PYMODULE'),
-  ('pygments.lexers.sql',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\sql.py',
-   'PYMODULE'),
-  ('pygments.lexers.haxe',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\haxe.py',
-   'PYMODULE'),
-  ('pygments.lexers.nix',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\lexers\\nix.py',
-   'PYMODULE'),
-  ('pygments.formatters.irc',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\irc.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\rtf.py',
    'PYMODULE'),
   ('pygments.formatter',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatter.py',
    'PYMODULE'),
-  ('pygments.formatters.bbcode',
+  ('pygments.formatters.svg',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\bbcode.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\svg.py',
    'PYMODULE'),
-  ('pygments.formatters.html',
+  ('pygments.formatters.img',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\html.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\img.py',
    'PYMODULE'),
   ('pygments.formatters.terminal256',
    'c:\\users\\fahim hadi '
@@ -6237,29 +6237,29 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\console.py',
    'PYMODULE'),
-  ('pygments.formatters.latex',
+  ('pygments.formatters.irc',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\latex.py',
-   'PYMODULE'),
-  ('pygments.formatters.img',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\img.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\irc.py',
    'PYMODULE'),
   ('pygments.formatters.terminal',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\terminal.py',
    'PYMODULE'),
+  ('pygments.formatters.latex',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\latex.py',
+   'PYMODULE'),
   ('pygments.formatters.other',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\other.py',
    'PYMODULE'),
-  ('pygments.formatters.rtf',
+  ('pygments.formatters.html',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\rtf.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\html.py',
    'PYMODULE'),
-  ('pygments.formatters.svg',
+  ('pygments.formatters.bbcode',
    'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\svg.py',
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\pygments\\formatters\\bbcode.py',
    'PYMODULE'),
   ('pygments.cmdline',
    'c:\\users\\fahim hadi '
@@ -6825,6 +6825,10 @@
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\zmq\\__init__.py',
    'PYMODULE'),
+  ('zmq.backend.cython',
+   'c:\\users\\fahim hadi '
+   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\zmq\\backend\\cython\\__init__.py',
+   'PYMODULE'),
   ('zmq.backend.cffi',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\zmq\\backend\\cffi\\__init__.py',
@@ -6876,10 +6880,6 @@
   ('zmq.backend.cffi.constants',
    'c:\\users\\fahim hadi '
    'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\zmq\\backend\\cffi\\constants.py',
-   'PYMODULE'),
-  ('zmq.backend.cython',
-   'c:\\users\\fahim hadi '
-   'maula\\appdata\\local\\programs\\python\\python37\\lib\\site-packages\\zmq\\backend\\cython\\__init__.py',
    'PYMODULE'),
   ('zmq.backend.select',
    'c:\\users\\fahim hadi '
