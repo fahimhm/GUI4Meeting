@@ -346,8 +346,8 @@ def eti_report(df):
         fro = 'prameswari.kristal@nutrifood.co.id'
 
         topic = wb_main[wb_main['event_code'] == event].loc[:,'event_name'].values.tolist()[0]
-        hartang = str(wb_main[wb_main['event_code'] == event].loc[:,'event_day'][0].strftime("%Y-%m-%d")) + " / " + str(wb_main[wb_main['event_code'] == event].loc[:,'event_date'][0].strftime("%H:%M:%S"))
-        wakdar = str(wb_main[wb_main['event_code'] == event].loc[:,'event_date'].values.tolist()[0]) + " / " + str(wb_main[wb_main['event_code'] == event].loc[:,'event_duration'].values.tolist()[0]) + " menit"
+        hartang = str(wb_main[wb_main['event_code'] == event].loc[:,'event_day'].iloc[0]) + " / " + str(wb_main[wb_main['event_code'] == event].loc[:,'event_date'].iloc[0].strftime("%H:%M:%S"))
+        wakdar = str(wb_main[wb_main['event_code'] == event].loc[:,'event_date'].iloc[0].strftime("%Y-%m-%d")) + " / " + str(wb_main[wb_main['event_code'] == event].loc[:,'event_duration'].values.tolist()[0]) + " menit"
         loc = wb_trainroom[wb_trainroom['event_code'] == event].loc[:,'meeting_room'].values[0]
         trainer = wb_trainer[wb_trainer['event_code'] == event].loc[:,'trainer_name'].values[0]
         sumtrainee = len(wb_trainee[wb_trainee['event_code'] == event].loc[:,'trainee_name'].values.tolist())
@@ -385,19 +385,19 @@ def eti_report(df):
                     </tr>
                     <tr>
                         <td>Penguasaan materi</td>
-                        <td>{mean_eti_trainer_materi}</td>
+                        <td>{mean_eti_trainer_materi:.2f}</td>
                     </tr>
                     <tr>
                         <td>Penampilan & body language</td>
-                        <td>{mean_eti_trainer_penampilan}</td>
+                        <td>{mean_eti_trainer_penampilan:.2f}</td>
                     </tr>
                     <tr>
                         <td>Kemampuan interaksi</td>
-                        <td>{mean_eti_trainer_interaksi}</td>
+                        <td>{mean_eti_trainer_interaksi:.2f}</td>
                     </tr>
                     <tr>
                         <td>Alokasi waktu training</td>
-                        <td>{mean_eti_trainer_waktu}</td>
+                        <td>{mean_eti_trainer_waktu:.2f}</td>
                     </tr>
                 </table><br><br>"""
         body3 = f"""<table border="1">
@@ -407,15 +407,15 @@ def eti_report(df):
                     </tr>
                     <tr>
                         <td>Bobot</td>
-                        <td>{mean_eti_materi_bobot}</td>
+                        <td>{mean_eti_materi_bobot:.2f}</td>
                     </tr>
                     <tr>
                         <td>Kejelasan</td>
-                        <td>{mean_eti_materi_jelas}</td>
+                        <td>{mean_eti_materi_jelas:.2f}</td>
                     </tr>
                     <tr>
                         <td>Kesesuaian materi dgn objective training</td>
-                        <td>{mean_eti_materi_objective}</td>
+                        <td>{mean_eti_materi_objective:.2f}</td>
                     </tr>
                 </table><br><br>"""
         body4 = f"""<table border="1">
@@ -425,7 +425,7 @@ def eti_report(df):
                     </tr>
                     <tr>
                         <td>Kesesuaian metode dgn objective training</td>
-                        <td>{mean_eti_metode_objective}</td>
+                        <td>{mean_eti_metode_objective:.2f}</td>
                     </tr>
                 </table><br><br>"""
         body5 = f"""<table border="1">
@@ -435,7 +435,7 @@ def eti_report(df):
                     </tr>
                     <tr>
                         <td>Layout, suhu & kebersihan ruangan</td>
-                        <td>{mean_eti_organizer}</td>
+                        <td>{mean_eti_organizer:.2f}</td>
                     </tr>
                 </table><br><br>"""
         body6 = f"""<table border="1">
@@ -445,11 +445,11 @@ def eti_report(df):
                     </tr>
                     <tr>
                         <td>Relevansi ke pekerjaan</td>
-                        <td>{mean_eti_trainee_relevan}</td>
+                        <td>{mean_eti_trainee_relevan:.2f}</td>
                     </tr>
                     <tr>
                         <td>Manfaat ke pekerjaan</td>
-                        <td>{mean_eti_trainee_manfaat}</td>
+                        <td>{mean_eti_trainee_manfaat:.2f}</td>
                     </tr>
                     <tr>
                         <td>Poin-poin penting yg bermanfaat bagi pekerjaan</td>
