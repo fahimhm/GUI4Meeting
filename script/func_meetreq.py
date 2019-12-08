@@ -619,7 +619,7 @@ class reportPage(tk.Frame):
         button1 = ttk.Button(self, text='Training', command=lambda: email_report_training())
         button1.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
         button2 = ttk.Button(self, text='ETI', command=lambda: email_report_eti())
-        button2.place(relx=0.5, rely=0, anchor=tk.CENTER)
+        button2.place(relx=0.5, rely=0.7, anchor=tk.CENTER)
 
 app = YDLapp()
 app.geometry("400x300")
