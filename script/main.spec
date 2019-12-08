@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['func_meetreq.py'],
-             pathex=['Z:\\F01 - YDL Generator\\script'],
+             pathex=['C:\\Users\\Fahim Hadi Maula\\Documents\\No Party\\07 - Freelance\\GUI4Meeting\\script'],
              binaries=[],
              datas=[],
              hiddenimports=[],

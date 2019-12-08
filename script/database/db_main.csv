@@ -1,3 +1,3 @@
 event_code,event_id_main,event_id_lain,event_name,event_day,event_date,event_number,event_duration,event_category,eval_training_code,meetreq_status,fdh_status,eti_status,orange_status,report_status,deadline
-2019-YDL-NFB-TECH_BASSS-1224-1,TECH_BASSST_2,,POK | Basic Statistic,Selasa,2019-12-24 10:00:00,1,120,Event Biasa,C0001,done,done,,,done,2019-07-19 14:00:00
-2019-YDL-NFB-TECH_SISMA-1223-1,TECH_SISMAL_1,,POK SML,Senin,2019-12-23 10:00:00,1,120,POK,C0002,done,done,,,done,2019-07-19 14:00:00
+2019-YDL-NFB-TECH_BASSS-1224-1,TECH_BASSST_2,,POK | Basic Statistic,Selasa,2019-12-24 10:00:00,1,120,Event Biasa,C0001,done,done,,,,2019-07-19 14:00:00
+2019-YDL-NFB-TECH_SISMA-1223-1,TECH_SISMAL_1,,POK SML,Senin,2019-12-23 10:00:00,1,120,POK,C0002,done,done,,,,2019-07-19 14:00:00
