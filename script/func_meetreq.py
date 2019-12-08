@@ -212,7 +212,6 @@ def meeting_req_byWin32(df):
         update_excel(idx, column="K")
 
         print(event, "-", wb_main[wb_main['event_code'] == event]['event_name'].iloc[0], "."*(40-len(wb_main[wb_main['event_code'] == event]['event_name'].iloc[0])), "done")
-        time.sleep(2)
 
 def update_excel(r, column):
     book = xw.Book(path)
@@ -369,13 +368,16 @@ def eti_report(df):
         all_eti_essay_2 = "\n".join(wb_eti[wb_eti['eval_training_code'] == code]['eti_essay_2'])
         all_eti_essay_3 = "\n".join(wb_eti[wb_eti['eval_training_code'] == code]['eti_essay_3'])
 
-        body1 = (f"Dear {trainer},<br>" \
-                "Terimakasih sudah membawakan materi training. Berikut adalah Evaluasi Training Internal dari peserta training.<br><br>" \
-                f"Topik\t\t: {topic} <br>" \
-                f"Hari/tanggal\t\t: {hartang} <br>" \
-                f"Waktu/durasi\t\t: {wakdar} <br>" \
-                f"Tempat\t\t: {loc} <br>" \
-                f"Jumlah peserta\t\t: {sumtrainee} <br>")
+        df_trainee_postest = wb_trainee[wb_trainee['event_code'] == event]
+        df_trainee_postest = df_trainee_postest.loc[:,['trainee_name', 'NIK', 'dept', 'nilai_post_test']]
+
+        body1 = f"""Dear {trainer},<br>"
+                Terimakasih sudah membawakan materi training. Berikut adalah Evaluasi Training Internal dari peserta training.<br><br>
+                Topik\t\t: {topic} <br>
+                Hari/tanggal\t\t: {hartang} <br>
+                Waktu/durasi\t\t: {wakdar} <br>
+                Tempat\t\t: {loc} <br>
+                Jumlah peserta\t\t: {sumtrainee} <br>"""
         body2 = f"""<table>
                     <tr>
                         <th>Aspek Trainer</th>
@@ -466,6 +468,44 @@ def eti_report(df):
                         <td>{all_eti_essay_3}</td>
                     </tr>
                 </table><br><br>"""
+        body8 = f"""<table>
+                    <tr>
+                        <th>Nama Peserta</th>
+                        <th>NIK</th>
+                        <th>Dept</th>
+                        <th>Nilai post-test</th>
+                    </tr>"""
+        for i in df_trainee_postest.index:
+            body8 += f"""<tr>
+                            <td>{df_trainee_postest.trainee_name[i]}</td>
+                            <td>{df_trainee_postest.NIK[i]}</td>
+                            <td>{df_trainee_postest.dept[i]}</td>
+                            <td>{df_trainee_postest.nilai_post_test[i]}</td>
+                        </tr>"""
+        body8 += """</table><br><br>"""
+        body9 = "Terimakasih,<br>Salam,<br>YDL"
+        body = body1 + body2 + body3 + body4 + body5 + body6 + body7 + body8 + body9
+
+        msg = MIMEMultipart()
+        msg['From'] = fro
+        msg['To'] = ",".join(list_to)
+        # msg['Cc'] = ",".join(['ranilia.lestari@nutrifood.co.id'])
+        msg['Subject'] = f"Report ETI {topic}"
+        msg.add_header('reply-to', ",".join([fro, 'ranilia.lestari@nutrifood.co.id']))
+        msg.attach(MIMEText(body, 'html'))
+
+        idx = wb_main[wb_main['event_code'] == event].index[0]
+        update_excel(idx, column="M")
+
+        mailServer = smtplib.SMTP('smtp.gmail.com', 587)
+        mailServer.ehlo()
+        mailServer.starttls()
+        mailServer.ehlo()
+        mailServer.login(login, password)
+        mailServer.sendmail(fro, list_to, msg.as_string())
+        mailServer.close()
+
+        print("Report ETI", event, "-", wb_main[wb_main['event_code'] == event]['event_name'].iloc[0], "."*(35-len(wb_main[wb_main['event_code'] == event]['event_name'].iloc[0])),'done')
 
 def email_training():
     tic = time.time()
