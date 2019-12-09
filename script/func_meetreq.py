@@ -584,11 +584,11 @@ class changeConf(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         tk.Label(self, text="\n\n").grid(row=0)
-        tk.Label(self, text="\tEmail", anchor="w").grid(row=2)
-        tk.Label(self, text="\tPassword", anchor="w").grid(row=3)
-        tk.Label(self, text="\tPath", anchor="w").grid(row=4)
-        tk.Label(self, text="\tReply-to", anchor="w").grid(row=5)
-        tk.Label(self, text="\tQuote", anchor="w").grid(row=6)
+        tk.Label(self, text="\tEmail").grid(row=2, sticky=tk.W)
+        tk.Label(self, text="\tPassword").grid(row=3, sticky=tk.W)
+        tk.Label(self, text="\tPath").grid(row=4, sticky=tk.W)
+        tk.Label(self, text="\tReply-to").grid(row=5, sticky=tk.W)
+        tk.Label(self, text="\tQuote").grid(row=6, sticky=tk.W)
 
         email = tk.Entry(self, width=40)
         password = tk.Entry(self, show="*", width=40)
@@ -613,7 +613,7 @@ class changeConf(tk.Frame):
             if len(path.get()) != 0:
                 ds['path'] = path.get()
             if len(replyto.get()) != 0:
-                l = replyto.get().split(",")
+                l = [x.strip() for x in replyto.get().split(',')]
                 ds['replyto'] = l
             if len(quote.get()) != 0:
                 ds['quote'] = quote.get()
@@ -628,8 +628,9 @@ class changeConf(tk.Frame):
             quote.delete(0, tk.END)
 
             print("Pengaturan konfigurasi berhasil")
+            tk.Label(self, text="Pengaturan konfigurasi berhasil").grid(row=12, column=1)
 
-        tk.Button(self, text='OK', command=change_conf).grid(row=10, column=5, sticky=tk.W, pady=4)
+        tk.Button(self, text='OK', command=change_conf).grid(row=10, column=1, sticky=tk.W, pady=4)
 
 class reportPage(tk.Frame):
     def __init__(self, parent, controller):
