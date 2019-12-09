@@ -584,17 +584,17 @@ class changeConf(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         tk.Label(self, text="\n\n").grid(row=0)
-        tk.Label(self, text="\tEmail").grid(row=2)
-        tk.Label(self, text="\tPassword").grid(row=3)
-        tk.Label(self, text="\tPath").grid(row=4)
-        tk.Label(self, text="\tReply-to").grid(row=5)
-        tk.Label(self, text="\tQuote").grid(row=6)
+        tk.Label(self, text="\tEmail", anchor="w").grid(row=2)
+        tk.Label(self, text="\tPassword", anchor="w").grid(row=3)
+        tk.Label(self, text="\tPath", anchor="w").grid(row=4)
+        tk.Label(self, text="\tReply-to", anchor="w").grid(row=5)
+        tk.Label(self, text="\tQuote", anchor="w").grid(row=6)
 
-        email = tk.Entry(self)
-        password = tk.Entry(self, show="*")
-        path = tk.Entry(self)
-        replyto = tk.Entry(self, width=40)
-        quote = tk.Entry(self, width=40)
+        email = tk.Entry(self, width=40)
+        password = tk.Entry(self, show="*", width=40)
+        path = tk.Entry(self, width=40)
+        replyto = tk.Entry(self, width=40, width=40)
+        quote = tk.Entry(self, width=40, width=40)
 
         email.grid(row=2, column=1)
         password.grid(row=3, column=1)
@@ -627,7 +627,9 @@ class changeConf(tk.Frame):
             replyto.delete(0, tk.END)
             quote.delete(0, tk.END)
 
-        tk.Button(self, text='OK', command=change_conf).grid(row=7, column=1, sticky=tk.W, pady=4)
+            print("Pengaturan konfigurasi berhasil")
+
+        tk.Button(self, text='OK', command=change_conf).grid(row=10, column=5, sticky=tk.W, pady=4)
 
 class reportPage(tk.Frame):
     def __init__(self, parent, controller):
