@@ -593,8 +593,8 @@ class changeConf(tk.Frame):
         email = tk.Entry(self)
         password = tk.Entry(self, show="*")
         path = tk.Entry(self)
-        replyto = tk.Entry(self, width=10)
-        quote = tk.Entry(self, width=10)
+        replyto = tk.Entry(self, width=40)
+        quote = tk.Entry(self, width=40)
 
         email.grid(row=2, column=1)
         password.grid(row=3, column=1)
@@ -627,7 +627,7 @@ class changeConf(tk.Frame):
             replyto.delete(0, tk.END)
             quote.delete(0, tk.END)
 
-        tk.Button(self, text='OK', command=change_conf).grid(row=5, column=1, sticky=tk.W, pady=4)
+        tk.Button(self, text='OK', command=change_conf).grid(row=7, column=1, sticky=tk.W, pady=4)
 
 class reportPage(tk.Frame):
     def __init__(self, parent, controller):
