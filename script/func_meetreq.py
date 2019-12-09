@@ -593,8 +593,8 @@ class changeConf(tk.Frame):
         email = tk.Entry(self, width=40)
         password = tk.Entry(self, show="*", width=40)
         path = tk.Entry(self, width=40)
-        replyto = tk.Entry(self, width=40, width=40)
-        quote = tk.Entry(self, width=40, width=40)
+        replyto = tk.Entry(self, width=40)
+        quote = tk.Entry(self, width=40)
 
         email.grid(row=2, column=1)
         password.grid(row=3, column=1)
