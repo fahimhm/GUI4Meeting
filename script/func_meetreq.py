@@ -188,7 +188,7 @@ def meeting_req_byWin32(df):
             cc.Type = 2
         
         body1 = "Dear rekan-rekan,\n"
-        body1 += "Mengundang rekan-rekan POK mengikuti:\n"
+        body1 += "Mengundang rekan-rekan mengikuti:\n"
         body1 += f"{wb_main[wb_main['event_code'] == event]['event_name'].tolist()[0]}\n"
         body1 += "\n"
         body1 += f"Hari, Tanggal: {wb_main[wb_main['event_code'] == event]['event_day'].tolist()[0]}, {wb_main[wb_main['event_code'] == event]['event_date'].tolist()[0]}\n"
@@ -199,7 +199,7 @@ def meeting_req_byWin32(df):
         forbody2 = wb_trainee[wb_trainee['event_code'] == event][['trainee_name', 'NIK', 'dept']].drop_duplicates(keep='first')
         body2 = ""
         for b2 in forbody2.index:
-            l = "-- " + forbody2.trainee_name[b2] + " - " + forbody2.NIK[b2] + " - " + forbody2.dept[b2] + "\n"
+            l = "-- " + str(forbody2.trainee_name[b2]) + " - " + str(forbody2.NIK[b2]) + " - " + str(forbody2.dept[b2]) + "\n"
             body2 += l
         body3 = "\n\nMohon bantuan rekan-rekan untuk dapat hadir tepat waktu, mengisi evaluasi training maupun posttest (bila ada).\n" \
         "Terimakasih ya\n" \
