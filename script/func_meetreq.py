@@ -161,7 +161,7 @@ def meeting_req_byWin32(df):
         list_trainee = wb_trainee[wb_trainee['event_code'] == event]['trainee_email'].unique().tolist()
         list_room = wb_trainroom[(wb_trainroom['event_code'] == event) & (wb_trainroom['meeting_room_category'] == 'system')]["meeting_room_email"].unique().tolist()
         list_optional = []
-        for i in wb_cc[wb_cc['dept'].isin(wb_trainee['dept'].unique().tolist())].iloc[:,2:].values.tolist():
+        for i in wb_cc[wb_cc['dept'].isin(wb_trainee[wb_trainee['event_code']==event]['dept'].unique().tolist())].iloc[:,2:].values.tolist():
             for l in i:
                 if l not in list_optional and str(l) != 'nan':
                     list_optional.append(l)
